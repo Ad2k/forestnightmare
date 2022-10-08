@@ -3,52 +3,58 @@
     <div class="topnav">
         <a href="index.html"><img src="home.png" width="13px" height="17px"> Strona Główna</img></a>
         <a href="info.html" class="active"><img src="copy.png" width="17px" height="17px"> Wiadomości</img></a>
-        <a href="contact.html"><img src="tel.png" width="17px" height="17px"> Kontakt</img></a>
         <a href="about.html"><img src="poem.png" width="17px" height="17px"> O projekcie</img></a>
+        <a href="contact-form.html" target="blank"><img src="tel.png" width="17px" height="17px"> Kontakt</img></a>
     </div>
     <link rel="stylesheet" href="style3.css"/>
-    <body>
-        <h2>Wiadomości</h2>
-        <ul>
-            <p>02.03.2022</p>
-            <section>
-                <li>+ Zmieniono treść notatek na aktualniejszą</li>
-                <li>+ Dodano wyświetlanie statusu gry na discordzie</li>
-                <li>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</li>
-                <li>+ Dodano protoyp zapisu i wczytywania gry</li>
-                <li>+ Zrobiono kopię zapasową na wypadek utraty danych</li>
-                <li>+ Zrobiono solidną zmianę targetu dla movementu przeciwnika</li>
-                <li>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</li>
-            </section>
-            <p>02.02.2022</p>
-            <section>
-                <li>+/- Optymalizacja</li>
-                <li>+/- Przebudowa lasu, dodanie wieży oraz domku.</li>
-                <li>+/- Dodanie różnorodnych drzew do lasu.</li>
-                <li>+/- Zmiana wysokości terenu i ładniejsza trawa.</li>
-                <li>+/- Zmiana całkowicie modelu wroga oraz jego koncepcji. Zastąpiono klauna czymś w stylu człowieka bez twarzy.</li>
-                <li>+/- Wstęp do misji i dialogów. Stworzono skrypt odpowiadający za audio w dialogach, i skrypt z modularną listą misji dostępnych w grze.</li>
-                    
-                <li>+ Dodano model gracza.</li>
-                <li>+ Dodano Animacje chodzenia, i jeden taniec na próbę dla modelu gracza.</li>
-                <li>+ Dodano ogrodzenie wśród lasu.</li>
-                <li>+ Dodano nieopodal lasu wioskę oraz ścieżkę do niej prowadzącą.</li>
-                <li>+ Dodano jedną cutscenkę do wioski.</li>
-                <li>+ Dodano menu główne wraz z muzyką.</li>
-                <li>+ Stworzono UI dla ekwipunku.</li>
-                <li>+ Dodano "Pause Menu"</li>
-                <li>+ Dodano HP dla gracza</li>
-                <li>+ Dodano ekran śmierci po tym gdy podejdziemy za blisko wroga.</li>
-                <li>+ Rozbudowano teren i zablokowano wyjście poza określony obszar.</li>
-                <li>+ Dodano Sprint oraz Kucanie postaci.</li>
-                    
-                <li>- Usunięto kapsułę graczowi</li>
-                <li>- Usunięto dźwięk "pozytywki" podczas gdy podejdziemy do wroga</li>
-                <li>- Usunięto próbnego klauna, światło oraz lewitującą notatkę.</li>
-                <li>- Usunięto irytującą trawę.</li>
-                <li>- Usunięto duże skupiska drzew i zastąpiono je małymi, co pozytywnie wpłynęło na FPS-y.</li>
-                </li>
-            </section>
-        </ul>
+    <body onload="showPage()" style="margin:0;" class="animate-bottom">
+        <div id="MyDiv">
+            <h2>Wiadomości</h2>
+            <ul>
+                <p>02.03.2022</p>
+                <section>
+                    <li>+ Zmieniono treść notatek na aktualniejszą</li>
+                    <li>+ Dodano wyświetlanie statusu gry na discordzie</li>
+                    <li>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</li>
+                    <li>+ Dodano protoyp zapisu i wczytywania gry</li>
+                    <li>+ Zrobiono kopię zapasową na wypadek utraty danych</li>
+                    <li>+ Zrobiono solidną zmianę targetu dla movementu przeciwnika</li>
+                    <li>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</li>
+                </section>
+                <p>02.02.2022</p>
+                <section>
+                    <li>+/- Optymalizacja</li>
+                    <li>+/- Przebudowa lasu, dodanie wieży oraz domku.</li>
+                    <li>+/- Dodanie różnorodnych drzew do lasu.</li>
+                    <li>+/- Zmiana wysokości terenu i ładniejsza trawa.</li>
+                    <li>+/- Zmiana całkowicie modelu wroga oraz jego koncepcji. Zastąpiono klauna czymś w stylu człowieka bez twarzy.</li>
+                    <li>+/- Wstęp do misji i dialogów. Stworzono skrypt odpowiadający za audio w dialogach, i skrypt z modularną listą misji dostępnych w grze.</li>
+                        
+                    <li>+ Dodano model gracza.</li>
+                    <li>+ Dodano Animacje chodzenia, i jeden taniec na próbę dla modelu gracza.</li>
+                    <li>+ Dodano ogrodzenie wśród lasu.</li>
+                    <li>+ Dodano nieopodal lasu wioskę oraz ścieżkę do niej prowadzącą.</li>
+                    <li>+ Dodano jedną cutscenkę do wioski.</li>
+                    <li>+ Dodano menu główne wraz z muzyką.</li>
+                    <li>+ Stworzono UI dla ekwipunku.</li>
+                    <li>+ Dodano "Pause Menu"</li>
+                    <li>+ Dodano HP dla gracza</li>
+                    <li>+ Dodano ekran śmierci po tym gdy podejdziemy za blisko wroga.</li>
+                    <li>+ Rozbudowano teren i zablokowano wyjście poza określony obszar.</li>
+                    <li>+ Dodano Sprint oraz Kucanie postaci.</li>
+                        
+                    <li>- Usunięto kapsułę graczowi</li>
+                    <li>- Usunięto dźwięk "pozytywki" podczas gdy podejdziemy do wroga</li>
+                    <li>- Usunięto próbnego klauna, światło oraz lewitującą notatkę.</li>
+                    <li>- Usunięto irytującą trawę.</li>
+                    <li>- Usunięto duże skupiska drzew i zastąpiono je małymi, co pozytywnie wpłynęło na FPS-y.</li>
+                    </li>
+                </section>
+            </ul>
+        </div>
+        <br/>
+        <div class="footer">
+            <p>Copyright www.forestnightmare.pl. All Rights Reserved.</p>
+        </div>
     </body>
 </head>
