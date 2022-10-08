@@ -15,7 +15,8 @@ body {
     animation-name: animatebottom;
     animation-duration: 1s;
     width: 100%;
-    height: 100%
+    height: 100%;
+    font-size: 17vw;
   }
   
   /* Style the links inside the navigation bar */
@@ -25,7 +26,7 @@ body {
     text-align: center;
     padding: 114px 50px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 17vw;
   }
   
   /* Change the color of links on hover */
