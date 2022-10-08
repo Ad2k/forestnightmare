@@ -2,7 +2,9 @@ body {
     font-family: Arial;
     background-image: url('game.png');
     color: white;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 .topnav {
     overflow: hidden;
