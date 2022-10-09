@@ -3,7 +3,7 @@ body {
     background-image: url('game.png');
     color: white;
     text-align: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
 }
