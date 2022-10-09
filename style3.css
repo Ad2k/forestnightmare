@@ -2,7 +2,7 @@ body {
     font-family: Arial;
     background-image: url('game.png');
     color: white;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
 }
