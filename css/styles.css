@@ -24,6 +24,9 @@ summary, hgroup {
   background-repeat: no-repeat;
   background-size: cover;
 }
+html {
+  scroll-behavior: smooth
+}
 
 a:active,
 a:hover {
@@ -121,12 +124,8 @@ section {
 h1 {
   margin-bottom: .5em;
 }
-#blog, #info {
-  margin-top: -55px;
-  margin-bottom: -30px;
-}
 #about {
-  margin-top: -100px;
+  height: 900px;
 }
 p {
   width: 90%;
@@ -148,6 +147,7 @@ header {
   width: 100%;
   left: 0;
   top: 0;
+  scroll-behavior: smooth;
 }
 
 .logo {
