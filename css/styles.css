@@ -27,6 +27,32 @@ summary, hgroup {
 html {
   scroll-behavior: smooth;
 }
+#lista1, #lista2, #lista3, #lista4, #lista5
+{
+   display: none;
+   transition-duration:250ms;
+}
+
+.rodzic > div {
+  color: white;
+  transform-origin:50% 0;
+  transform:scaleY(0);
+  margin-top:15px;
+  padding:15px;
+  border:3px solid rgb(0, 0, 0);
+  background-color:rgb(12, 12, 12);
+  transition-duration:250ms;
+  margin-bottom: -220px;
+}
+
+.rodzic:hover > div {
+  transform:scaleY(1);
+  margin-bottom: 50px;
+}
+
+.rodzic {
+  display: inline;
+}
 
 a:active,
 a:hover {
@@ -127,9 +153,10 @@ h1 {
 #blog, #info {
   margin-top: -55px;
   margin-bottom: -30px;
+
 }
-#about {
-  margin-top: -100px;
+#abuout > div {
+  clear: both;
 }
 p {
   width: 90%;
