@@ -2,32 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Strona Główna</title>
+    <title>Forest Nightmare</title>
     <meta name="author" content="Adtile">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="logokrt.png">
     <link rel="stylesheet" href="css/styles.css">
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <link rel="stylesheet" href="css/ie.css">
-    <![endif]-->
+    <script src="js/fastclick.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
     <script src="js/responsive-nav.js"></script>
   </head>
   <body onload="myFunction()">
     <div id="loader" class="center"></div>
+    <div id="logoloader">
+      <img src="logo1.png"></img>
+    </div>
     <div id="myDiv" style="display: none;" class="animate-bottom">
       <header>
-        <a href="#home" class="logo" data-scroll>Forest Nightmare</a>
+        <img src="logo1.png" href="#Strona-Glowna" class="logo" data-scroll></img>
+        <a href="#" class="nav-toggle"></a>
         <nav class="nav-collapse">
           <ul>
-            <li class="menu-item"><a href="#home" data-scroll>Strona Główna</a></li>
-            <li class="menu-item"><a href="#about" data-scroll>Wiadomości</a></li>
-            <li class="menu-item"><a href="#projects" data-scroll>O Projekcie</a></li>
-            <li class="menu-item"><a href="#blog" data-scroll>Kontakt</a></li>
+            <li class="menu-item"><a href="#Strona-Glowna" data-scroll>Strona Główna</a></li>
+            <li class="menu-item"><a href="#Wiadomosci" data-scroll>Wiadomości</a></li>
+            <li class="menu-item"><a href="#Informacje" data-scroll>O Projekcie</a></li>
+            <li class="menu-item"><a href="#Kontakt" data-scroll>Kontakt</a></li>
           </ul>
         </nav>
       </header>
       <div class="kont">
-        <section id="home">
+        <section id="Strona-Glowna">
           <h2>Strona główna</h2><br/>
           <p>Witaj na stronie głównej projektu "Forest Nightmare"!</p><br/>
           <img src="game2.png"></img>
@@ -35,28 +38,31 @@
           <h2>Coś o mnie:</h2><br/>
           <p>Cześć! Jestem Adam i mam 15 lat. Od jakiegoś czasu tworzę projekt, pod nazwą <b>Forest Nightmare</b>. Jest to gra, i wiem że nie jest powalająca. Ale wciąż się uczę. Uwielbiam programowanie i nigdy z tego nie zrezygnuje.</p>
         </section>
-        <section id="about" class="info">
+        <section id="Wiadomosci" class="info">
           <h2>Wiadomości</h2><br/>
-          <div class="rodzic">
-            <p>02.03.2022 (Najedź aby rozwinąć)</p>
-            <div>                  
-              <p>+ Zmieniono treść notatek na aktualniejszą</p>
-              <p>+ Dodano wyświetlanie statusu gry na discordzie</p>
-              <p>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</p>
-              <p>+ Dodano protoyp zapisu i wczytywania gry</p>
-              <p>+ Zrobiono kopię zapasową na wypadek utraty danych</p>
-              <p>+ Zrobiono solidną zmianę targetu dla movementu przeciwnika</p>
-              <p>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</p></div>
-          </div><br/>
-          <div class="rodzic">
-            <p>02.02.2022 (Najedź aby rozwinąć)</p>
-            <div><p>+/- Optymapzacja</p>
+            <button id="przyc"><a id="text" onClick="toggle('q1')">
+            02.02.2022
+            </a></button>
+            <div class="infodiv" id="q1" style="display:none;">
+            <p>+ Zmieniono treść notatek na aktualniejszą</p>
+            <p>+ Dodano wyświetlanie statusu gry na discordzie</p>
+            <p>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</p>
+            <p>+ Dodano protoyp zapisu i wczytywania gry</p>
+            <p>+ Zrobiono kopię zapasową na wypadek utraty danych</p>
+            <p>+ Zrobiono solidną zmianę targetu dla movementu przeciwnika</p>
+            <p>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</p>
+            </div><br/>
+            <button id="przyc"><a id="text" onClick="toggle('q2')">
+            02.03.2022
+            </a></button>
+            <div class="infodiv" id="q2" style="display:none;">
+              <p>+/- Optymalizacja</p>
               <p>+/- Przebudowa lasu, dodanie wieży oraz domku.</p>
               <p>+/- Dodanie różnorodnych drzew do lasu.</p>
               <p>+/- Zmiana wysokości terenu i ładniejsza trawa.</p>
               <p>+/- Zmiana całkowicie modelu wroga oraz jego koncepcji. Zastąpiono klauna czymś w stylu człowieka bez twarzy.</p>
               <p>+/- Wstęp do misji i dialogów. Stworzono skrypt odpowiadający za audio w dialogach, i skrypt z modularną pstą misji dostępnych w grze.</p>
-                  
+
               <p>+ Dodano model gracza.</p>
               <p>+ Dodano Animacje chodzenia, i jeden taniec na próbę dla modelu gracza.</p>
               <p>+ Dodano ogrodzenie wśród lasu.</p>
@@ -70,21 +76,32 @@
               <p>+ Rozbudowano teren i zablokowano wyjście poza określony obszar.</p>
               <p>+ Dodano Sprint oraz Kucanie postaci.</p>
                   
-              <p>- Usunięto kapsułę graczowi</p>
-              <p>- Usunięto dźwięk "pozytywki" podczas gdy podejdziemy do wroga</p>
+              <p>- Usunięto kapsułę graczowi.</p>
+              <p>- Usunięto dźwięk "pozytywki" podczas gdy podejdziemy do wroga.</p>
               <p>- Usunięto próbnego klauna, światło oraz lewitującą notatkę.</p>
               <p>- Usunięto irytującą trawę.</p>
-              <p>- Usunięto duże skupiska drzew i zastąpiono je małymi, co pozytywnie wpłynęło na FPS-y.</p></div>
-          </div>
+              <p>- Usunięto duże skupiska drzew i zastąpiono je małymi, co pozytywnie wpłynęło na FPS-y.</p>
+            </div><br/>
+            <button id=przyc><a id="text" onClick="toggle('q3')">
+              15.10.2022
+              </a></button>
+              <div class="infodiv" id="q3" style="display:none;">
+                <p>+ Wznowiono pracę nad grą po długiej przerwie, poniżej znajduje się lista wszystkich rzeczy dokonanych podczas tego okresu:</p>
+                <p>+ Dodano kilka cutscenek.</p>
+                <p>+ Oskryptowano częściowo pliki audio.</p>
+                <p>+ Dodano minimapę.</p>
+                <p>+ Rozbudowano menu główne usprawniając je oraz dodając menu ustawień.</p>
+                <p>+ Poprawiono optymalizację gry, oraz całokształt.</p>
+                <p></p>
+              </div>
         </section>
-
-        <section id="projects" class="about">
+        <section id="Informacje" class="about">
           <h2>O projekcie:</h2><br/>
           <p>Projekt <b>"Forest Nightmare"</b>, to "gra" która jest rozwijana przezemnie. Założeniem projektu było to, żeby się czegoś nauczyć, a nie żeby w tą grę ktoś na poważnie grał, sam do tego podchodzę jak do zwykłej nauki, i pewnie nie raz zagram w tą grę po prostu dla siebie, czy dla przyjemności. Gra jest oczywiście do pobrania, jednakże tak jak już pisałem wcześniej, jest to zwykły projekt więc proszę nie oczekiwać cudów. Tymbardziej że jak narazie nie mam doświadczenia komeryjnego jeśli chodzi o tworzenie gier. </p><br/>
           <img src="game.png" height="600px"></img>
         </section>
 
-        <section id="blog" class="blog"> 
+        <section id="Kontakt" class="blog"> 
           <form>
             <h2>Kontakt:</h2>
             <br/>E-mail:<br/><br/><input type="text" name="email" placeholder="np. osoba@gmail.com"><br/><br/>
@@ -98,9 +115,6 @@
         <div class="footer">
           <p>Copyright www.forestnightmare.pl. All Rights Reserved.</p>
         </div>
-
-        <script src="js/fastclick.js"></script>
-        <script src="js/fixed-responsive-nav.js"></script>
       </div>
     </div>
     </body>
