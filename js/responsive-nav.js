@@ -658,6 +658,15 @@
 
 }(document, window, 0));
 
+function pokazAlboUkryj(co) {
+  var obiekt = document.getElementById(co);
+  if (obiekt.style.display == 'block') {
+       obiekt.style.display = 'none';
+  } else {
+       obiekt.style.display = 'block';
+  }
+}
+
 var myVar;
             function myFunction() {
               myVar = setTimeout(showPage, 3000);
@@ -665,5 +674,11 @@ var myVar;
             
             function showPage() {
               document.getElementById("loader").style.display = "none";
+              document.getElementById("logoloader").style.display = "none";
               document.getElementById("myDiv").style.display = "block";
             }
+            function toggle(obj) {
+              var obj=document.getElementById(obj);
+              if (obj.style.display == "block") obj.style.display = "none";
+              else obj.style.display = "block";
+    }
