@@ -157,7 +157,6 @@ body {
 }
 
 section {
-  border-bottom: 1px solid #999;
   text-align: center;
   padding: 100px 0 0;
   height: 800px;
@@ -470,8 +469,23 @@ header {
   margin: 15px
 
 }
-.infodiv {
+
+#przycisk, #przyciskk, #przyciskkk {
+  background-color: rgba(35, 35, 35, 0.64);
+  border: none;
+  color: white;
+  padding: 5px, 12px;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 15px
+}
+
+#tresc, #trescc, #tresccc {
   padding: 10px;
   background-color:rgba(25, 25, 25, 0.553);
   border-color: white;
+}
+
+#Wiadomosci {
+  height: 100px;
 }
