@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="U-8">
     <title>Forest Nightmare</title>
     <meta name="author" content="Adtile">
+    <meta keywords="forestnightmare, nightmareforest, forest game, horror game">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/x-icon" href="logokrt.png">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/fastclick.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
     <script src="js/responsive-nav.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body onload="myFunction()">
     <div id="loader" class="center"></div>
@@ -29,6 +31,7 @@
           </ul>
         </nav>
       </header>
+
       <div class="kont">
         <section id="Strona-Glowna">
           <h2>Strona główna</h2><br/>
@@ -40,82 +43,88 @@
         </section>
         <section id="Wiadomosci" class="info">
           <h2>Wiadomości</h2><br/>
-            <button id="przyc"><a id="text" onClick="toggle('q1')">
-            02.02.2022
-            </a></button>
-            <div class="infodiv" id="q1" style="display:none;">
-            <p>+ Zmieniono treść notatek na aktualniejszą</p>
-            <p>+ Dodano wyświetlanie statusu gry na discordzie</p>
-            <p>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</p>
-            <p>+ Dodano protoyp zapisu i wczytywania gry</p>
-            <p>+ Zrobiono kopię zapasową na wypadek utraty danych</p>
-            <p>+ Zrobiono solidną zmianę targetu dla movementu przeciwnika</p>
-            <p>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</p>
-            </div><br/>
-            <button id="przyc"><a id="text" onClick="toggle('q2')">
-            02.03.2022
-            </a></button>
-            <div class="infodiv" id="q2" style="display:none;">
-              <p>+/- Optymalizacja</p>
-              <p>+/- Przebudowa lasu, dodanie wieży oraz domku.</p>
-              <p>+/- Dodanie różnorodnych drzew do lasu.</p>
-              <p>+/- Zmiana wysokości terenu i ładniejsza trawa.</p>
-              <p>+/- Zmiana całkowicie modelu wroga oraz jego koncepcji. Zastąpiono klauna czymś w stylu człowieka bez twarzy.</p>
-              <p>+/- Wstęp do misji i dialogów. Stworzono skrypt odpowiadający za audio w dialogach, i skrypt z modularną pstą misji dostępnych w grze.</p>
+              <button class="brick" id="przycisk">02.02.2022</button>
+              <div class="brick" id="tresc" style="color: white;">
+                <p>+ Zmieniono treść notatek na aktualniejszą</p>
+                <p>+ Dodano wyświetlanie statusu gry na discordzie</p>
+                <p>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</p>
+                <p>+ Dodano protoyp zapisu i wczytywania gry</p>
+                <p>+ Zrobiono kopię zapasową na wypadek utraty danych</p>
+                <p>+ Zrobiono solidną zmianę targetu dla movementu przeciwnika</p>
+                <p>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</p>
+              </div><br/>
+              <button class="brick" id="przyciskk">02.03.2022</button>
+              <div class="brick" id="trescc" style="color: white;">
+                <p>+/- Optymalizacja</p>
+                <p>+/- Przebudowa lasu, dodanie wieży oraz domku.</p>
+                <p>+/- Dodanie różnorodnych drzew do lasu.</p>
+                <p>+/- Zmiana wysokości terenu i ładniejsza trawa.</p>
+                <p>+/- Zmiana całkowicie modelu wroga oraz jego koncepcji. Zastąpiono klauna czymś w stylu człowieka bez twarzy.</p>
+                <p>+/- Wstęp do misji i dialogów. Stworzono skrypt odpowiadający za audio w dialogach, i skrypt z modularną pstą misji dostępnych w grze.</p>
+  
+                <p>+ Dodano model gracza.</p>
+                <p>+ Dodano Animacje chodzenia, i jeden taniec na próbę dla modelu gracza.</p>
+                <p>+ Dodano ogrodzenie wśród lasu.</p>
+                <p>+ Dodano nieopodal lasu wioskę oraz ścieżkę do niej prowadzącą.</p>
+                <p>+ Dodano jedną cutscenkę do wioski.</p>
+                <p>+ Dodano menu główne wraz z muzyką.</p>
+                <p>+ Stworzono UI dla ekwipunku.</p>
+                <p>+ Dodano "Pause Menu"</p>
+                <p>+ Dodano HP dla gracza</p>
+                <p>+ Dodano ekran śmierci po tym gdy podejdziemy za bpsko wroga.</p>
+                <p>+ Rozbudowano teren i zablokowano wyjście poza określony obszar.</p>
+                <p>+ Dodano Sprint oraz Kucanie postaci.</p>
+                    
+                <p>- Usunięto kapsułę graczowi.</p>
+                <p>- Usunięto dźwięk "pozytywki" podczas gdy podejdziemy do wroga.</p>
+                <p>- Usunięto próbnego klauna, światło oraz lewitującą notatkę.</p>
+                <p>- Usunięto irytującą trawę.</p>
+                <p>- Usunięto duże skupiska drzew i zastąpiono je małymi, co pozytywnie wpłynęło na FPS-y.</p>
+              </div><br/>
+              <button class="brick" id="przyciskkk">15.10.2022</button>
+              <div class="brick" id="tresccc" style="color: white;">
+                <p>+ Zmieniono treść notatek na aktualniejszą</p>
+                <p>+ Dodano wyświetlanie statusu gry na discordzie</p>
+                <p>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</p>
+                <p>+ Dodano protoyp zapisu i wczytywania gry</p>
+                <p>+ Zrobiono kopię zapasową na wypadek utraty danych</p>
+                <p>+ Zrobiono solidną zmianę targetu dla movementu przeciwnika</p>
+                <p>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</p>
+              </div><br/>
+              <script>
+                  $(document.getElementById("przycisk")).click(function(){
+                      $(document.getElementById("tresc")).slideToggle(300);
+                  }); 
+                  $(document.getElementById("przyciskk")).click(function(){
+                      $(document.getElementById("trescc")).slideToggle(300);
+                  });
+                  $(document.getElementById("przyciskkk")).click(function(){
+                      $(document.getElementById("tresccc")).slideToggle(300);
+                  }); 
 
-              <p>+ Dodano model gracza.</p>
-              <p>+ Dodano Animacje chodzenia, i jeden taniec na próbę dla modelu gracza.</p>
-              <p>+ Dodano ogrodzenie wśród lasu.</p>
-              <p>+ Dodano nieopodal lasu wioskę oraz ścieżkę do niej prowadzącą.</p>
-              <p>+ Dodano jedną cutscenkę do wioski.</p>
-              <p>+ Dodano menu główne wraz z muzyką.</p>
-              <p>+ Stworzono UI dla ekwipunku.</p>
-              <p>+ Dodano "Pause Menu"</p>
-              <p>+ Dodano HP dla gracza</p>
-              <p>+ Dodano ekran śmierci po tym gdy podejdziemy za bpsko wroga.</p>
-              <p>+ Rozbudowano teren i zablokowano wyjście poza określony obszar.</p>
-              <p>+ Dodano Sprint oraz Kucanie postaci.</p>
-                  
-              <p>- Usunięto kapsułę graczowi.</p>
-              <p>- Usunięto dźwięk "pozytywki" podczas gdy podejdziemy do wroga.</p>
-              <p>- Usunięto próbnego klauna, światło oraz lewitującą notatkę.</p>
-              <p>- Usunięto irytującą trawę.</p>
-              <p>- Usunięto duże skupiska drzew i zastąpiono je małymi, co pozytywnie wpłynęło na FPS-y.</p>
-            </div><br/>
-            <button id=przyc><a id="text" onClick="toggle('q3')">
-              15.10.2022
-              </a></button>
-              <div class="infodiv" id="q3" style="display:none;">
-                <p>+ Wznowiono pracę nad grą po długiej przerwie, poniżej znajduje się lista wszystkich rzeczy dokonanych podczas tego okresu:</p>
-                <p>+ Dodano kilka cutscenek.</p>
-                <p>+ Oskryptowano częściowo pliki audio.</p>
-                <p>+ Dodano minimapę.</p>
-                <p>+ Rozbudowano menu główne usprawniając je oraz dodając menu ustawień.</p>
-                <p>+ Poprawiono optymalizację gry, oraz całokształt.</p>
-                <p></p>
+              </script>
+              <section id="Informacje" class="about">
+                <h2>O projekcie:</h2><br/>
+                <p>Projekt <b>"Forest Nightmare"</b>, to "gra" która jest rozwijana przezemnie. Założeniem projektu było to, żeby się czegoś nauczyć, a nie żeby w tą grę ktoś na poważnie grał, sam do tego podchodzę jak do zwykłej nauki, i pewnie nie raz zagram w tą grę po prostu dla siebie, czy dla przyjemności. Gra jest oczywiście do pobrania, jednakże tak jak już pisałem wcześniej, jest to zwykły projekt więc proszę nie oczekiwać cudów. Tymbardziej że jak narazie nie mam doświadczenia komeryjnego jeśli chodzi o tworzenie gier. </p><br/>
+                <img src="game.png" height="600px"></img>
+              </section>
+      
+              <section id="Kontakt" class="blog"> 
+                <form>
+                  <h2>Kontakt:</h2>
+                  <br/>E-mail:<br/><br/><input type="text" name="email" placeholder="np. osoba@gmail.com"><br/><br/>
+                  Tytuł:<br/><br/><input type="text" name="tytul" placeholder="np. Propozycja"><br/><br/>
+                  Treść: <br/><br/>
+                  <textarea name="nazwa" cols="140" rows="15" placeholder="..."></textarea><br/><br/>
+                  <button class="btn"><class="sumbit">Wyślij</button>            
+                  <button class="btn"><class="reset">Wyczyść</button>    
+              </form>
+              </section>
+              <div class="footer">
+                <p>Copyright www.forestnightmare.pl. All Rights Reserved.</p>
               </div>
+            </div>
+          </div> 
         </section>
-        <section id="Informacje" class="about">
-          <h2>O projekcie:</h2><br/>
-          <p>Projekt <b>"Forest Nightmare"</b>, to "gra" która jest rozwijana przezemnie. Założeniem projektu było to, żeby się czegoś nauczyć, a nie żeby w tą grę ktoś na poważnie grał, sam do tego podchodzę jak do zwykłej nauki, i pewnie nie raz zagram w tą grę po prostu dla siebie, czy dla przyjemności. Gra jest oczywiście do pobrania, jednakże tak jak już pisałem wcześniej, jest to zwykły projekt więc proszę nie oczekiwać cudów. Tymbardziej że jak narazie nie mam doświadczenia komeryjnego jeśli chodzi o tworzenie gier. </p><br/>
-          <img src="game.png" height="600px"></img>
-        </section>
-
-        <section id="Kontakt" class="blog"> 
-          <form>
-            <h2>Kontakt:</h2>
-            <br/>E-mail:<br/><br/><input type="text" name="email" placeholder="np. osoba@gmail.com"><br/><br/>
-            Tytuł:<br/><br/><input type="text" name="tytul" placeholder="np. Propozycja"><br/><br/>
-            Treść: <br/><br/>
-            <textarea name="nazwa" cols="140" rows="15" placeholder="..."></textarea><br/><br/>
-            <button class="btn"><class="sumbit">Wyślij</button>            
-            <button class="btn"><class="reset">Wyczyść</button>    
-        </form>
-        </section>
-        <div class="footer">
-          <p>Copyright www.forestnightmare.pl. All Rights Reserved.</p>
-        </div>
-      </div>
-    </div>
     </body>
 </html>
