@@ -1,45 +1,158 @@
-body {
-    font-family: Arial;
-    background-image: url('game.png);
+* {
+    box-sizing: border-box;
+  }
+html {
+    scroll-behavior: smooth;
+}
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    background-image: url('img/game.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
     color: white;
+  }
+  .content {
     text-align: center;
-}
-h2 {
-    font-size: 28px;
-}
-h1 {
-    font-size: 36px;
-}
-span {
-    color: rgb(151, 151, 151)
-}
-img {
-    width: 150px;
-    height: 180px;
-}
-/* Add a black background color to the top navigation */
-.topnav {
-    overflow: hidden;
+  }
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #212121;
+    position: relative;
   }
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: none;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
     text-decoration: none;
-    font-size: 17px;
+    color: #efefef;
   }
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
+  .nav > #nav-check {
+    display: none;
+  }
+
+  #przycisk, #przyciskk, #przyciskkk {
+    background-color: rgba(35, 35, 35, 0.64);
+    border: none;
     color: white;
+    padding: 5px, 12px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 15px
+  }
+  
+  #tresc, #trescc, #tresccc {
+    padding: 10px;
+    background-color:rgba(25, 25, 25, 0.553);
+    border-color: white;
+  }
+  .footer {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(36, 36, 36, 0.288);
+    color: rgb(136, 136, 136);
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+  }
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 15px
+  }
+  
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
   }
