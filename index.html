@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -8,6 +7,7 @@
         <meta name="viewport" content="width=240, height=320, user-scalable=yes, initial-scale=1, maximum-scale=5.0, minimum-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="img/logokrt.png">
         <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body onload="WczytajStrone()">
@@ -29,7 +29,7 @@
             
             <div class="nav-links">
               <a href="#Strona-Glowna">Stona Główna</a>
-              <a href="#Wiadomosci">Wiadomości</a>
+              <a href="#Wiadomosci">Aktualności</a>
               <a href="#Informacje">O Projekcie</a>
               <a href="#Kontakt">Kontakt</a>
             </div>
@@ -40,15 +40,30 @@
             <br/><br/>
             <h2>Strona główna</h2><br/>
             <p>Witaj na stronie głównej projektu "Forest Nightmare"!</p><br/>
-            <img src="img/game2.png"></img>
-            <br/>
-            <h2>Coś o mnie:</h2><br/>
-            <p>Cześć! Jestem Adam i mam 15 lat. Od jakiegoś czasu tworzę projekt, pod nazwą <b>Forest Nightmare</b>. Jest to gra, i wiem że nie jest powalająca. Ale wciąż się uczę. Uwielbiam programowanie i nigdy z tego nie zrezygnuje.</p>
+          <section id="photogallery">
+            <div class="fotogaleria">
+              <div class="blok">
+                  <img src="img/game2.png" width="200" height="200"></img>
+                </a>
+                <div class="opisfoto">Postać główna</div>
+              </div> 
+              <div class="blok">
+                  <img src="img/d.png" width="200" height="200"></img>
+                </a>
+                <div class="opisfoto">Max</div>
+              </div>   
+              <div class="blok">
+                  <img src="img/d.png" width="200" height="200"></img>
+                </a>
+                <div class="opisfoto">???</div>
+              </div>     
+            </div>
           </section>
+            <br/>
           <section id="Wiadomosci" class="info">
-            <h2>Wiadomości</h2><br/>
+            <h2>Aktualności</h2><br/>
                 <button class="brick" id="przycisk">02.02.2022</button>
-                <div class="brick" id="tresc" style="color: white;">
+                <div class="tresc" id="tresc" style="color: white;">
                   <p>+ Zmieniono treść notatek na aktualniejszą</p>
                   <p>+ Dodano wyświetlanie statusu gry na discordzie</p>
                   <p>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</p>
@@ -58,7 +73,7 @@
                   <p>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</p>
                 </div><br/>
                 <button class="brick" id="przyciskk">02.03.2022</button>
-                <div class="brick" id="trescc" style="color: white;">
+                <div class="tresc" id="trescc" style="color: white;">
                   <p>+/- Optymalizacja</p>
                   <p>+/- Przebudowa lasu, dodanie wieży oraz domku.</p>
                   <p>+/- Dodanie różnorodnych drzew do lasu.</p>
@@ -86,7 +101,7 @@
                   <p>- Usunięto duże skupiska drzew i zastąpiono je małymi, co pozytywnie wpłynęło na FPS-y.</p>
                 </div><br/>
                 <button class="brick" id="przyciskkk">15.10.2022</button>
-                <div class="brick" id="tresccc" style="color: white;">
+                <div class="tresc" id="tresccc" style="color: white;">
                   <p>+ Zmieniono treść notatek na aktualniejszą</p>
                   <p>+ Dodano wyświetlanie statusu gry na discordzie</p>
                   <p>+ Dodano wyświetlanie przedmiotów z bazy danych w ekwipunku</p>
@@ -96,9 +111,22 @@
                   <p>+ Zrobiono wyświetlanie notatek podczas gdy podejdziemy do nich</p>
                 </div><br/>
                 <section id="Informacje" class="about">
-                  <h2>O projekcie:</h2><br/>
-                  <p>Projekt <b>"Forest Nightmare"</b>, to "gra" która jest rozwijana przezemnie. Założeniem projektu było to, żeby się czegoś nauczyć, a nie żeby w tą grę ktoś na poważnie grał, sam do tego podchodzę jak do zwykłej nauki, i pewnie nie raz zagram w tą grę po prostu dla siebie, czy dla przyjemności. Gra jest oczywiście do pobrania, jednakże tak jak już pisałem wcześniej, jest to zwykły projekt więc proszę nie oczekiwać cudów. Tymbardziej że jak narazie nie mam doświadczenia komeryjnego jeśli chodzi o tworzenie gier. </p><br/>
-                  <img src="img/game3.png" height="600px"></img>
+                  <h2>O nas:</h2><br/>
+                  <p>Cześć! Jesteśmy grupą osób tworzącą różnego rodzaju gry. Od jakiegoś czasu tworzymy nasz kolejny projekt, pod nazwą <b>Forest Nightmare</b>. Jest to gra typu horror, i wiemy że nie jest powalająca. Ale chcemy tylko zaznaczyć, że wciąż się uczymy,i uwielbiamy programowanie i nigdy z tego nie zrezygnujemy. Projekt <b>"Forest Nightmare"</b>, to "gra" która jest rozwijana przez nas. Założeniem projektu jak za każdym razem było to, żeby się czegoś nauczyć, a nie żeby w tą grę ktoś na poważnie grał, sami podchodzimy do tego jak do zwykłej nauki, i pewnie nie raz zagramy w tą grę po prostu dla siebie, czy dla czystej przyjemności. Oczywistym faktem jest to, że gra będzie do pobrania, nie znamy jeszcze dokładnej daty publikacji, jednakże tak jak już pisałem wcześniej, jest to zwykły projekt więc proszę nie oczekiwać cudów. Tymbardziej że jak narazie nie posiadamy doświadczenia komeryjnego jeśli chodzi o tworzenie gier. </p><br/>
+                  <h2>Zespół:</h2>
+                  <div id="team">
+                    <div id="adam">
+                      <p>Adam Mierzejewski</p>
+                      <img src="img/ja3.png"/>
+                      <p>Programista, Grafik</p>
+                    </div>
+                    <div id="hubert">
+                      <p>Hubert Piechocki</p>
+                      <img src="img/hubert.png"/>
+                      <p>Programista, Aktor Głosowy</p>
+                    </div>
+                  </div><br/>
+                  <img id="zdj" src="img/game3.png" height="600px"></img><br/>
                 </section>
         
                 <section id="Kontakt" class="blog"> 
@@ -107,13 +135,13 @@
                     <br/>E-mail:<br/><br/><input type="text" name="email" placeholder="np. osoba@gmail.com"><br/><br/>
                     Tytuł:<br/><br/><input type="text" name="tytul" placeholder="np. Propozycja"><br/><br/>
                     Treść: <br/><br/>
-                    <textarea name="nazwa" cols="140" rows="15" placeholder="..."></textarea><br/><br/>
+                    <textarea id="pole" name="nazwa" cols="140" rows="15" placeholder="..."></textarea><br/><br/>
                     <button class="btn"><class="sumbit">Wyślij</button>            
                     <button class="btn"><class="reset">Wyczyść</button>    
                 </form>
                 </section>
                 <div class="footer">
-                  <p>Copyright www.forestnightmare.pl. All Rights Reserved.</p>
+                  <p>Copyright www.forestnightmare.pl. Wszelkie Prawa Zastrzeżone.</p>
                 </div>
               </div>
             </div> 
@@ -153,6 +181,10 @@
                 navbar.classList.remove("sticky");
             }
             }
+            function darkmode() {
+            var element = document.body;
+            element.classList.toggle("darkmode");
+          }
 
         </script>
         
