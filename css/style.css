@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'shlopregular';
+    src: url('shlop_rg-webfont.woff2') format('woff2'),
+         url('shlop_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.container, .contentmain {
+  margin-top: 10%;
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: white;
+}
+.content {
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+
+}
+#submitsucesstext {
+  display: none;
+}
+body {
+    background-image: url('img/game.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 1000px;
+    text-align: center;
+}
+#quote {
+  font-size: 15px;
+}
+#about-us-message {
+  width: 70%;
+  margin: auto;
+}
+#main-page-messages {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+.brick {
+  text-decoration: double;
+  width: 450px;
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(82, 82, 82);
+  color: white;
+  padding: 5px, 12px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 5px
+}
+
+.tresc {
+  display: none;
+  padding: 3px;
+  background-color:rgb(36, 36, 36);
+  border-color: white;
+  font-family:'Courier New', Courier, monospace;
+}
+#mainimg {
+  vertical-align: middle;
+  height: 300px;
+  width: auto;
+}
+@media (max-width: 695px) {
+  .content {
+    margin-top: 30%;
+  }
+  #mainimg {
+    width: 60%;
+    height: auto;
+  }
+
+  #textmess {
+    width: 80%;
+  }
+  .brick {
+    margin-bottom: 20px;
+  }
+  #main-page-messages {
+    font-size: small;;
+  }
+}
