@@ -1,13 +1,10 @@
 body {
-    background-image: url('img/game.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: black;
-    width: 100%;
-    height: 1000px;
-    font-family: Arial;
-    margin: 0;
-    text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(9, 9, 16);
+  height: 600px;
+  width:100%;
+  text-align: center;
 }
 * {
   box-sizing: border-box;
@@ -39,9 +36,11 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
-  padding: 16px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
@@ -93,9 +92,11 @@ img {
 
 /* Six columns side by side */
 .column {
-  float: left;
+  display: inline;
   width: 16.66%;
+  padding: 15px;
 }
+
 
 /* Add a transparency effect for thumnbail images */
 .demo {
@@ -111,4 +112,79 @@ img {
 
 .content {
   margin-top: 10%;
+}
+@media (max-width: 695px) {
+  .content {
+    margin-top: 30%;
+  }
+  img {
+    vertical-align: middle;
+    width: 80%;
+    height: auto;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 16px;
+    margin-top: -30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  margin-left: 49%;
+  margin-top: 20%;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: rgba(34, 34, 34, 0);
+  padding: 2px 16px;
+  color: white;
+  margin-bottom: 50px;
+  margin-top: -50px;  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  display: inline;
+  width: 6%;
+  margin-left: -10%;
+  
+}
+
 }

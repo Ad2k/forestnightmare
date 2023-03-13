@@ -42,6 +42,20 @@ body {
   margin: auto;
   display: block;
 }
+#contact-content {
+  width: 20%;
+  margin: auto;
+  margin-top: 130px;
+  border: solid 2px rgb(255, 255, 255);
+  padding: 20px;
+}
+#contact-content > img {
+  clip-path: circle();
+}
+#contact-content > p {
+  margin-top: 10px;
+  color: grey;
+}
 .brick {
   text-decoration: double;
   width: 450px;
@@ -86,5 +100,16 @@ body {
   }
   #main-page-messages {
     font-size: small;;
+  }
+  #contact-content {
+    width: 40%;
+    margin: auto;
+    margin-top: 130px;
+    border: solid 2px rgb(255, 255, 255);
+    padding: 20px;
+  }
+  .brick {
+    width: 80%;
+    height: 50px;
   }
 }
