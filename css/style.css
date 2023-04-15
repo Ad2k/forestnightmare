@@ -1,14 +1,12 @@
 @font-face {
-  font-family: 'shlopregular';
-  src: url('shlop_rg-webfont.woff2') format('woff2'),
-    url('shlop_rg-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'shlopregular';
+    src: url('shlop_rg-webfont.woff2') format('woff2'),
+         url('shlop_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
-
-.container,
-.contentmain {
+.container, .contentmain {
   margin-top: 10%;
   text-align: center;
   z-index: -1;
@@ -16,50 +14,41 @@
   padding: 0 30px;
   color: white;
 }
-
 .content {
-  color: white;
-  text-align: center;
-  margin-top: 10%;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
 
 }
-
 #submitsucesstext {
   display: none;
 }
-
 body {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgb(9, 9, 16);
-  height: 1000px;
-  text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(9, 9, 16);
+    height: 1000px;
+    text-align: center;
 }
-
 #quote {
   font-size: 15px;
 }
-
 #about-us-message {
   width: 70%;
   margin: auto;
 }
-
 #main-page-messages {
   width: 70%;
   margin: auto;
   display: block;
 }
-
 #contact-content {
   width: 20%;
   margin: auto;
   margin-top: 130px;
   border: solid 2px rgb(51, 51, 51);
   padding: 20px;
-  text-decoration: none;
 }
-
 #contact-img {
   clip-path: circle();
   height: 70px;
@@ -71,41 +60,38 @@ body {
   color: white;
   text-decoration: none;
 }
-
 .brick {
   text-decoration: double;
-  width: 450px;
-  height: 50px;
+  width: 300px;
+  height: 40px;
   background-color: rgb(50, 50, 50);
   border-style: solid;
   border-width: 3px;
   border-color: rgb(82, 82, 82);
-  color: white;
+  color: rgb(139, 139, 139);
   padding: 5px, 12px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   margin: 5px
 }
 
 .tresc {
   display: none;
   padding: 3px;
-  background-color: rgb(36, 36, 36);
+  background-color:rgb(36, 36, 36);
   border-color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  font-family:'Courier New', Courier, monospace;
 }
-
 #mainimg {
   vertical-align: middle;
   height: 300px;
   width: auto;
 }
-
 @media (max-width: 695px) {
   .content {
     margin-top: 30%;
   }
-
   #mainimg {
     width: 60%;
     height: auto;
@@ -114,26 +100,21 @@ body {
   #textmess {
     width: 80%;
   }
-
   .brick {
     margin-bottom: 20px;
   }
-
   #main-page-messages {
     font-size: 14px;
   }
-
   #about-us-message {
     font-size: 14px;
   }
-
   #contact-content {
     width: 40%;
     margin: auto;
     margin-top: 130px;
     padding: 20px;
   }
-
   .brick {
     width: 80%;
     height: 50px;
