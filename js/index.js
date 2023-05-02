@@ -7,3 +7,6 @@ $(document.getElementById("przyciskk")).click(function(){
 $(document.getElementById("przyciskkk")).click(function(){
     $(document.getElementById("tresccc")).slideToggle(300);
 });
+$(document.getElementById("przyciskkkk")).click(function(){
+    $(document.getElementById("trescccc")).slideToggle(300);
+});
